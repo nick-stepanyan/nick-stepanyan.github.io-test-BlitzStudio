@@ -1,0 +1,261 @@
+html {
+    scroll-behavior: smooth;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1920px;
+    height: 100%;
+}
+
+.header {
+    background-image: url('../img/bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.header__menu {
+    display: none;
+}
+
+nav {
+    padding-top: 41px;
+    margin-bottom: 41px;
+}
+
+.header__list {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.header__list a {
+    color: #f1f1f1;
+}
+
+.header__list::after {
+    content: "";
+    position: absolute;
+    width: 1786px;
+    border-bottom: 1px solid #ffffff;
+    bottom: -41px;
+}
+
+.header__list-item {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 24px;
+    line-height: 1.2;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.025em;
+    color: #f1f1f1;
+    cursor: pointer;
+}
+
+.header__list-item:nth-child(1) {
+    margin-right: 57px;
+}
+
+.header__list-item:nth-child(2) {
+    margin-right: 64px;
+}
+
+.header__list-item:nth-child(3) {
+    margin-right: 70px;
+}
+
+.header__footer {
+    margin-top: 898px;
+}
+
+.header__footer-info {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    line-height: 1.2;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: #f1f1f1;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.header__arrows {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 32px;
+    height: 32px;
+    padding-bottom: 53px;
+}
+
+
+/* 
+font-family: 'Open Sans', sans-serif; 
+
+*/
+
+.about {
+    max-width: 1920px;
+    height: 100%;
+    background-color: #ffffff;
+}
+
+.about__nav {
+    padding-top: 39px;
+    margin-bottom: 42px;
+}
+
+.about__list {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.about__list-item {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    color: #bebebe;
+}
+
+.about__list-line {
+    max-width: 1786px;
+    border-bottom: 1px solid #bebebe;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 75px;
+}
+
+.about__list a {
+    color: #bebebe;
+}
+
+.about__me {
+    display: flex;
+    margin-bottom: 81px;
+}
+
+.about__me-foto {
+    margin-left: 164px;
+}
+
+.about__me-info {
+    margin-left: 52px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.about__me-title {
+    font-size: 60px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: #202020;
+    margin-top: 88px;
+    margin-bottom: 81px;
+}
+
+.about__me-text {
+    max-width: 678px;
+    font-size: 24px;
+    font-weight: 300;
+    letter-spacing: 0.025em;
+    color: #202020;
+}
+
+.about__me-avtor {
+    margin-top: 66px;
+    font-size: 36px;
+    font-weight: 400;
+    color: #202020;
+}
+
+.about__footer {
+    color: #bebebe;
+    text-align: center;
+}
+
+.about__arrows {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 32px;
+    height: 32px;
+    margin-top: 25px;
+    padding-bottom: 84px;
+}
+
+@media (max-width: 1450px) {
+    .about__me {
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 1150px) {
+    .about__me-info {
+        margin-left: 58px;
+        margin-right: 37px;
+    }
+    .about__me-foto {
+        margin: 0;
+    }
+    .about__me-avtor {
+        margin-bottom: 81px;
+    }
+}
+
+@media (max-width: 750px) {
+    .about__footer {
+        display: none;
+    }
+    .header__footer {
+        display: none;
+    }
+    nav {
+        display: none;
+    }
+    .about__me-title {
+        font-size: 50px;
+        margin-top: 48px;
+        margin-bottom: 32px;
+    }
+    .about__me-foto img {
+        max-width: 100%;
+    }
+    .header__menu {
+        display: block;
+        font-family: 'PT Sans', sans-serif;
+        font-size: 23.8px;
+        line-height: 1.2;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.025em;
+        padding: 42px 0 207px 42px;
+    }
+    .header__menu a {
+        color: #f1f1f1;
+    }
+    .header {
+        background-size: auto;
+        background-position: left;
+    }
+    .about__list-line {
+        display: none;
+    }
+}
+
+@media (max-width: 400px) {
+    .about__me-title {
+        font-size: 30px;
+        margin-top: 48px;
+        margin-bottom: 32px;
+    }
+    .about__me-text {
+        font-size: 18px;
+    }
+    .about__me-avtor {
+        font-size: 18px;
+        margin-top: 53px;
+    }
+}
